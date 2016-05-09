@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+
+ body {
+   margin-left: 10%;
+   margin-right: 10%;
+   font-family: 'Libre Baskerville', serif;
+
+ }
+ .row {
+   clear: both;
+   height: 150px;
+ }
+ .column {
+   float: left;
+   width: 30%;
+ }
+ .spanABTop {
+   float: left;
+   width: 100%;
+ }
+ .item {
+   margin-right: 1em;
+ }
+ .headline {
+  font-size: large;
+  font weight: bold;
+  padding-bottom: 0.2em;
+ }
+ .byline {
+   font-size: small;
+   color: grey;
+   padding-bottom: 0.2em;
+ }
+ .summary {
+  font-size: small;
+  text-align: justify;
+  text-justify: inter-word;
+ }

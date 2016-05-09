@@ -1,0 +1,40 @@
+<div ng-controller="ngStoryController">
+  <div class="row spanABTop">
+    <div ng-repeat="asset in spanABTop">
+      <h1>{{asset.headline}}</h1>
+      <div class="byline"> {{asset.byline}} </div>
+      <div class="summary"> {{asset.summary}} </div>
+    </div>
+  </div>
+
+  <div class="column aColumn">
+    <div class="item" ng-repeat="asset in aColumn">
+      <p ng-href="{{asset.masthead_URL}}">
+        <div class="headline">{{asset.headline}}</div>
+        <div class="byline"> {{asset.byline}} </div>
+        <div class="summary"> {{asset.summary}}</div>
+      </p>
+    </div>
+  </div>
+  <div class="column bColumn">
+    <div class="item" ng-repeat="asset in bColumn">
+      <p ng-href="{{asset.masthead_URL}}">
+        <div class="headline">{{asset.headline}}</div>
+        <div class="byline"> {{asset.byline}} </div>
+        <div class="summary"> {{asset.summary}}</div>
+      </p>
+    </div>
+  </div>
+  <div class="column cColumn">
+    <div class="item" ng-repeat="asset in cColumn">
+      <p ng-href="{{asset.masthead_URL}}">
+        <div class="headline">{{asset.headline}}</div>
+        <div class="byline"> {{asset.byline}} </div>
+        <div class="summary"> {{asset.summary}}</div>
+      </p>
+    </div>
+  </div>
+
+
+
+</div>
