@@ -1,37 +1,46 @@
 <div ng-controller="ngStoryController">
+
+  <a class="float-right" href="" ng-click="get_articles('English')">  English Edition </a>
+  <a class="float-right" href="" ng-click="get_articles('Bongia')">  Bongia Edition </a>
+  <h4> {{lang}} Edition</h4>
   <div class="row spanABTop">
     <div ng-repeat="asset in spanABTop">
-      <h1>{{asset.headline}}</h1>
+      <img class="headline-image" ng-show="asset.images[0].types" ng-src="http://www.nytimes.com/{{asset.images[0].types[0].content}}" alt="http://www.nytimes.com/{{asset.images[0].types[1].content}}" />
+      <h1 class="main-headline">{{asset.headline}} </h1>
       <div class="byline"> {{asset.byline}} </div>
       <div class="summary"> {{asset.summary}} </div>
+      <a ng-href="{{asset.url}}">Read More</a>
     </div>
   </div>
 
   <div class="column aColumn">
     <div class="item" ng-repeat="asset in aColumn">
-      <p ng-href="{{asset.masthead_URL}}">
-        <div class="headline">{{asset.headline}}</div>
-        <div class="byline"> {{asset.byline}} </div>
-        <div class="summary"> {{asset.summary}}</div>
-      </p>
+      <div class="headline">{{asset.headline}}</div>
+      <img class="image" ng-show="asset.images[0].types" ng-src="http://www.nytimes.com/{{asset.images[0].types[0].content}}" alt="http://www.nytimes.com/{{asset.images[0].types[1].content}}" />
+      <div class="byline"> {{asset.byline}} </div>
+      <div class="summary"> {{asset.summary}}</div>
+      <a ng-href="{{asset.url}}">Read More</a>
     </div>
   </div>
   <div class="column bColumn">
     <div class="item" ng-repeat="asset in bColumn">
-      <p ng-href="{{asset.masthead_URL}}">
-        <div class="headline">{{asset.headline}}</div>
-        <div class="byline"> {{asset.byline}} </div>
-        <div class="summary"> {{asset.summary}}</div>
-      </p>
+
+      <div class="headline">{{asset.headline}}</div>
+      <img class="image" ng-show="asset.images[0].types" ng-src="http://www.nytimes.com/{{asset.images[0].types[1].content}}" alt="http://www.nytimes.com/{{asset.images[0].types[1].content}}" />
+      <div class="byline"> {{asset.byline}} </div>
+      <div class="summary"> {{asset.summary}}</div>
+      <a ng-href="{{asset.url}}">Read More</a>
+
     </div>
   </div>
   <div class="column cColumn">
     <div class="item" ng-repeat="asset in cColumn">
-      <p ng-href="{{asset.masthead_URL}}">
-        <div class="headline">{{asset.headline}}</div>
-        <div class="byline"> {{asset.byline}} </div>
-        <div class="summary"> {{asset.summary}}</div>
-      </p>
+      <div class="headline">{{asset.headline}}</div>
+      <img class="image" ng-show="asset.images[0].types" ng-src="http://www.nytimes.com/{{asset.images[0].types[0].content}}" alt="http://www.nytimes.com/{{asset.images[0].types[1].content}}" />
+      <div class="byline"> {{asset.byline}} </div>
+      <div class="summary"> {{asset.summary}}</div>
+      <a ng-href="{{asset.url}}">Read More</a>
+
     </div>
   </div>
 

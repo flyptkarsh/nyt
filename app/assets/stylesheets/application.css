@@ -15,39 +15,112 @@
  */
 
 
- body {
-   margin-left: 10%;
-   margin-right: 10%;
-   font-family: 'Libre Baskerville', serif;
-
- }
- .row {
-   clear: both;
-   height: 150px;
- }
- .column {
-   float: left;
-   width: 30%;
- }
- .spanABTop {
-   float: left;
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Libre Baskerville', serif;
+  }
+  a {
+    color: #000000;
+    background: #ffffff;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 3em;
+    border: solid #949494 2px;
+    text-decoration: none;
+  }
+  a:hover {
+    background: #adadad;
+    text-decoration: none;
+  }
+ .image {
    width: 100%;
  }
- .item {
-   margin-right: 1em;
+ .float-right {
+   float: right;
  }
- .headline {
-  font-size: large;
-  font weight: bold;
-  padding-bottom: 0.2em;
- }
- .byline {
+ @media screen and (min-width: 700px) {
+   .headline-image {
+     float: left;
+     padding-right: 2em;
+     height: 200px;
+   }
+   .row {
+     clear: both;
+
+   }
+   .column {
+     float: left;
+     width: 30%;
+     padding-right: 2em;
+     max-height: 700px;
+     overflow: scroll;
+   }
+   .spanABTop {
+     float: left;
+     width: 100%;
+     padding-bottom: 2em;
+   }
+   .item {
+     margin-top: 2em; 
+     margin-right: 1em;
+   }
+   .headline {
+    font-size: large;
+    font-weight: bold;
+    font-style: oblique;
+    padding-bottom: 0.2em;
+   }
+   .main-headline {
+    font-size: 3em;
+
+   }
+   .byline {
+     font-size: small;
+     color: grey;
+     padding-bottom: 0.2em;
+   }
+   .summary {
+    font-size: small;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-bottom: 0.5em;
+   }
+
+}
+@media screen and (max-width: 700px) {
+  .headline-image {
+    width: 100%;
+  }
+  .row {
+    clear: both;
+  }
+  .column {
+    float: left;
+    width: 100%;
+  }
+  .spanABTop {
+    float: left;
+    width: 100%;
+  }
+  .item {
+    margin-right: 1em;
+  }
+  .headline {
+   font-size: x-large;
+   font-weight: bold;
+   font-style: oblique;
+   padding-bottom: 0.5em;
+  }
+  .byline {
+    font-size: small;
+    color: grey;
+    padding-bottom: 0.2em;
+  }
+  .summary {
    font-size: small;
-   color: grey;
-   padding-bottom: 0.2em;
- }
- .summary {
-  font-size: small;
-  text-align: justify;
-  text-justify: inter-word;
- }
+   text-align: justify;
+   text-justify: inter-word;
+   padding-bottom: 0.5em;
+  }
+
+}
