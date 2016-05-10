@@ -1,4 +1,4 @@
-== README
+== NYT Beta Coding Challenge
 
 A live version of this application can be found at
 https://glacial-waters-43141.herokuapp.com/
