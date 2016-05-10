@@ -45,9 +45,9 @@ class StoryController < ApplicationController
     a.collect do |w|
       if w.length > 3
         if w.slice(0) == w.slice(0).upcase
-          new_string = new_string + " Boinga"
+          new_string = new_string + " Boinga" + w.gsub(/[a-zA-Z0-9\-]/,"")
         else
-          new_string = new_string + " boinga"
+          new_string = new_string + " boinga" + w.gsub(/[a-zA-Z0-9\-]/,"")
         end
       else
         new_string = new_string + " " + w
